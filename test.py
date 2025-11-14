@@ -105,8 +105,7 @@ def process_entry(entry):
         if results:
             all_results[entry] = results
             with open(RESULTS_FILE, "w", encoding="utf-8") as f:
-                json.dump
-                (all_results, f, ensure_ascii=False, indent=2)
+                json.dump(all_results, f, ensure_ascii=False, indent=2)
             print(f"Saved {results} to results under '{entry}'")
 
     log.append(entry)
